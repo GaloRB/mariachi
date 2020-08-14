@@ -127,7 +127,7 @@ body {
     display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .navegacion {
         display: inline-block;
         padding-top: 2rem;
@@ -150,10 +150,17 @@ body {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav-logo a {
+        font-family: 'Lemonada', cursive;
+        font-size: 3.5rem !important;
+    }
+}
+
 
 /* -------------------- menu mobile ------------*/
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .menu {
         display: none;
     }
@@ -254,6 +261,18 @@ label #cancel {
 @media (min-width: 375px) and (max-width: 380px) {
     #btn-menu:checked~label #cancel {
         left: 15.5rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 321px) {
+    #btn-menu:checked~label #cancel {
+        left: 14rem;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 770px) {
+    #btn-menu:checked~label #cancel {
+        left: 55.5rem;
     }
 }
 
@@ -415,7 +434,6 @@ label #cancel {
 /***************** servicios **********************/
 
 .servicios {
-    /*background-color: #615a46;*/
     background-image: url(../img/sombrero.jpg);
     background-position: center;
     background-size: cover;
@@ -462,6 +480,12 @@ ul {
 .lista {
     margin: 3rem 2.5rem 2rem auto;
     line-height: 4rem;
+}
+
+@media (min-width: 319px) and (max-width: 321px) {
+    .lista ul li {
+        font-size: 2rem;
+    }
 }
 
 @media (min-width: 768px) {
